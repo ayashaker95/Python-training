@@ -24,8 +24,8 @@ def calculate(operation):
 
 
 root = tk.Tk()
-root.title("Calculator")
-root.geometry("400x400")
+root.title("Calculator- Aya")
+root.geometry("300x300")
 
 tk.Label(root, text="Number 1:").pack(pady=5)
 entry1 = tk.Entry(root)
