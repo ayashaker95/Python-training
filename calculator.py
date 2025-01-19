@@ -1,5 +1,7 @@
 import tkinter as tk # this library for GUI
 
+from file_reader import save_result_in_file 
+
 def calculate(operation):
     try:
         num1 = float(entry1.get())
@@ -19,7 +21,7 @@ def calculate(operation):
         result_label.config(text=f"Result: {result}")
     except ValueError:
         result_label.config(text="Enter valid numbers")
-
+    
 #GUI for the calculator
 
 
@@ -42,7 +44,6 @@ tk.Button(root, text="/", command=lambda: calculate("/"), width=5).pack(pady=5)
 
 result_label = tk.Label(root, text="Result: ")
 result_label.pack(pady=10)
-
 
 # run the main event loop
 root.mainloop()
