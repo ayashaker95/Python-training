@@ -24,11 +24,11 @@ def write_to_file():
         data = request.json.get('data', None) # Extract the data from the json 
         # Condation if the data is NONE 
         if data is None:
-            return jsonify({"message": "Missing 'data' in request body."})
+            return jsonify({"message": "Missing data in request body."})
         # open the file for write
         with open(FILE_PATH, 'w') as file:
             file.write(data) # Write the the file 
-        return jsonify({"message": "Data written to file."})
+        return jsonify({"message": "Data written to the file."})
     except Exception as e:
         return jsonify({"message": str(e)})
 
