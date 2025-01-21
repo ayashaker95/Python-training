@@ -5,7 +5,7 @@ FILE_PATH = "db.txt"  # File to store data
 
 
 # GET the content of the file
-@app.route('/file', methods=['GET'])
+@app.route('/test-get-api', methods=['GET'])
 def get_file_content():
     try:
         # Open the file for read
@@ -18,7 +18,7 @@ def get_file_content():
 
 
 # POST data to the file
-@app.route('/file', methods=['POST'])
+@app.route('/test-post-api', methods=['POST'])
 def write_to_file():
     try:
         data = request.json.get('data', None) # Extract the data from the json 
