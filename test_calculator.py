@@ -1,6 +1,7 @@
 import pytest
 import tkinter as tk
 from calculator import calculate
+import allure
 
 @pytest.fixture
 def tkinter_elements():
